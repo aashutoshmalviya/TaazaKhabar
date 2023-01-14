@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:padding="2dp"></androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/progressBarHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Fetching news "
+            android:textColor="#028174"
+            android:textSize="25sp"></TextView>
+
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="#028174"
+            tools:layout_editor_absoluteX="170dp"
+            tools:layout_editor_absoluteY="315dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</RelativeLayout>
